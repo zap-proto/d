@@ -1,5 +1,8 @@
 # capnproto-dlang: Cap'n Proto for D
 
+> **Docs:** [ZAP D SDK](https://zap-proto.dev/docs/sdks) · part of the [ZAP Protocol](https://zap-proto.io)
+
+
 [![Dub version](https://img.shields.io/dub/v/capnproto-dlang.svg)](https://code.dlang.org/packages/capnproto-dlang)
 [![Dub downloads](https://img.shields.io/dub/dt/capnproto-dlang.svg)](https://code.dlang.org/packages/capnproto-dlang)
 [![Build Status](https://travis-ci.org/capnproto/capnproto-dlang.svg?branch=master)](https://travis-ci.org/capnproto/capnproto-dlang)
