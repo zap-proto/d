@@ -1,46 +1,46 @@
-name "capnproto-dlang"
-description "Cap'n Proto in pure D"
+name "zap-dlang"
+description "Zap in pure D"
 authors "Thomas Brix Larsen"
 copyright "Copyright © 2017, Thomas Brix Larsen"
 license "MIT"
 
 configuration "lib" {
 	targetType "library"
-	excludedSourceFiles "source/capnproto/benchmark/*" "source/samples/*"
+	excludedSourceFiles "source/zap/benchmark/*" "source/samples/*"
 }
 
 configuration "test" {
 	targetName "test"
 	targetType "executable"
-	excludedSourceFiles "source/capnproto/benchmark/*" "source/capnproto/tests/*" "source/samples/mmap.d"
+	excludedSourceFiles "source/zap/benchmark/*" "source/zap/tests/*" "source/samples/mmap.d"
 }
 
 configuration "benchmark-carsales" {
 	targetName "benchmark-carsales"
 	targetType "executable"
-	excludedSourceFiles "source/capnproto/benchmark/CatRank.d" "source/capnproto/benchmark/Eval.d" "source/samples/*" "source/capnproto/tests/*"
+	excludedSourceFiles "source/zap/benchmark/CatRank.d" "source/zap/benchmark/Eval.d" "source/samples/*" "source/zap/tests/*"
 }
 
 configuration "benchmark-catrank" {
 	targetName "benchmark-catrank"
 	targetType "executable"
-	excludedSourceFiles "source/capnproto/benchmark/CarSales.d" "source/capnproto/benchmark/Eval.d" "source/samples/*" "source/capnproto/tests/*"
+	excludedSourceFiles "source/zap/benchmark/CarSales.d" "source/zap/benchmark/Eval.d" "source/samples/*" "source/zap/tests/*"
 }
 
 configuration "benchmark-eval" {
 	targetName "benchmark-eval"
 	targetType "executable"
-	excludedSourceFiles "source/capnproto/benchmark/CatRank.d" "source/capnproto/benchmark/CarSales.d" "source/samples/*" "source/capnproto/tests/*"
+	excludedSourceFiles "source/zap/benchmark/CatRank.d" "source/zap/benchmark/CarSales.d" "source/samples/*" "source/zap/tests/*"
 }
 
 configuration "sample-addressbook" {
 	targetName "addressbook"
 	targetType "executable"
-	excludedSourceFiles "source/samples/mmap.d" "source/capnproto/benchmark/*" "source/capnproto/tests/*"
+	excludedSourceFiles "source/samples/mmap.d" "source/zap/benchmark/*" "source/zap/tests/*"
 }
 
 configuration "sample-mmap" {
 	targetName "mmap"
 	targetType "executable"
-	excludedSourceFiles "source/samples/test.d" "source/capnproto/benchmark/*" "source/capnproto/tests/*"
+	excludedSourceFiles "source/samples/test.d" "source/zap/benchmark/*" "source/zap/tests/*"
 }

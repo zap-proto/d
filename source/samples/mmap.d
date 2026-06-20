@@ -3,13 +3,13 @@ module mmap;
 import std.mmfile;
 import std.stdio;
 
-import capnproto.FileDescriptor;
-import capnproto.MemoryMapped;
-import capnproto.MessageBuilder;
-import capnproto.MessageReader;
-import capnproto.Serialize;
-import capnproto.StructList;
-import capnproto.Void;
+import zap.FileDescriptor;
+import zap.MemoryMapped;
+import zap.MessageBuilder;
+import zap.MessageReader;
+import zap.Serialize;
+import zap.StructList;
+import zap.Void;
 
 import addressbook;
 
