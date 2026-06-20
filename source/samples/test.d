@@ -2,12 +2,12 @@ module test;
 
 import std.stdio;
 
-import capnproto.FileDescriptor;
-import capnproto.MessageBuilder;
-import capnproto.MessageReader;
-import capnproto.SerializePacked;
-import capnproto.StructList;
-import capnproto.Void;
+import zap.FileDescriptor;
+import zap.MessageBuilder;
+import zap.MessageReader;
+import zap.SerializePacked;
+import zap.StructList;
+import zap.Void;
 
 import addressbook;
 
@@ -23,7 +23,7 @@ void writeAddressBook()
 	alice.id = 123;
     /* you can use dlang style property access ...
 	alice.name = "Alice";
-       ... or get/set methods like C++ capnproto interface ...
+       ... or get/set methods like C++ zap interface ...
     */
 	alice.setName("Alice");
 	alice.email = "alice@example.com";
