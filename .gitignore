@@ -14,6 +14,9 @@
 # Executables
 *.exe
 
+# DUB-generated test runner
+zap-dlang-test-lib
+
 # DUB
 .dub
 docs.json
