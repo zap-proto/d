@@ -1,0 +1,10 @@
+d — part of the ZAP Protocol (github.com/zap-proto)
+
+This product includes software developed by the capnproto-dlang project:
+  capnproto-dlang — https://github.com/capnproto/capnproto-dlang
+  Copyright (c) 2013-2015 Sandstorm Development Group, Inc. and contributors
+  Licensed under the MIT License (see LICENSE).
+
+ZAP is a derivative work: a brand-neutral fork of capnproto-dlang providing a
+pure D implementation of the ZAP serialization format.
+Modifications Copyright (c) 2025 Lux Industries Inc.
