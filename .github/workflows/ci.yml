@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: dub test (${{ matrix.compiler }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler:
+          - ldc-latest
+          - dmd-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install D (${{ matrix.compiler }})
+        uses: dlang-community/setup-dlang@v1.4.0
+        with:
+          compiler: ${{ matrix.compiler }}
+
+      - name: dub test
+        run: dub test --compiler=$DC
